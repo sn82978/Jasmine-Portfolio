@@ -1,0 +1,66 @@
+.navbar {
+    background-color: #d1477e; /* Dark pink */
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 3rem;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    transform: translateY(-2px);
+  }
+  
+  .bow-icon {
+    font-size: 1.5rem;
+    position: absolute;
+    top: -25px;
+    animation: bounce 1s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-2px); }
+  }
+  
+  .navbar li.active a {
+    font-weight: bold;
+    position: relative;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .navbar ul {
+      gap: 1.5rem;
+    }
+    
+    .bow-icon {
+      font-size: 1.2rem;
+      top: -20px;
+    }
+  }
+  
