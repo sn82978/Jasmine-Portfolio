@@ -38,14 +38,14 @@
   .bow-icon {
     font-size: 1.5rem;
     position: absolute;
-    top: -25px;
+    top: -15px;  /* Reduced from -25px */
     animation: bounce 1s infinite alternate;
   }
   
   @keyframes bounce {
     from { transform: translateY(0); }
-    to { transform: translateY(-2px); }
-  }
+    to { transform: translateY(-5px); }  /* Reduced movement */
+  }  
   
   .navbar li.active a {
     font-weight: bold;
